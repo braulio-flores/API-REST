@@ -11,6 +11,7 @@
                 $this->apellido = $apellido;
                 $this->fechaNacimiento = $fechaNacimiento;
                 $this->pais = $pais;
+                
         }
 
         public function toString(){

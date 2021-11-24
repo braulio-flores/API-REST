@@ -20,15 +20,15 @@
         break;
         case 'GET':
             if (isset($_GET['id'])) {
-                $resultado["mensaje"] = "Obtener usuario ".$_GET["id"];
-                echo json_encode($resultado);
-                echo "--------";
-                Usuario::obtenerUsuario($_GET['id']);
+                // $resultado["mensaje"] = "Obtener usuario ".$_GET["id"];
+                // echo json_encode($resultado);
+                // echo "--------";
+                echo Usuario::obtenerUsuario($_GET['id']);
             }
             else{
-                $resultado["mensaje"] = "Retornar todos los usuarios";
-                echo json_encode($resultado);
-                echo "----";
+                // $resultado["mensaje"] = "Retornar todos los usuarios";
+                // echo json_encode($resultado);
+                // echo "----";
                 echo Usuario::obtenerUsuarios();
             }
         break;
